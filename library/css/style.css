@@ -1,0 +1,267 @@
+/* Global Styles */
+body {
+  background-repeat: none;
+  background-color: #fefcf6;
+  font-family: "Montserrat", sans-serif;
+  color: #343a40;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit-based browsers (Chrome, Safari) */
+}
+
+.navbar {
+  background-color: #fefcf6;
+  color: #2177ca;
+  flex: 0 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #2177ca;
+}
+
+.form-control {
+  background-color: #fefcf6;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-weight: 500;
+  position: relative;
+  color: #2177ca;
+  transition: color 0.2s ease;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2177ca;
+}
+
+.nav-link:hover {
+  color: #2177ca;
+}
+
+.container {
+  background-color: #fefcf6;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-content {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #2177ca, #64c3fb);
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #64c3fb, #2177ca);
+}
+
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefcf6;
+  text-align: center; /* added to center the text */
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.features {
+  background-color: #fefcf6;
+  padding: 50px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  flex: 1 1 30%;
+  margin: 20px;
+  background-color: #d8e2eb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #2177ca;
+}
+
+.feature h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-blue {
+  border-color: #488bd2;
+}
+
+.thead-blue th {
+  background-color: #488bd2;
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e9f7fe;
+}
+
+.table td {
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+.footer p {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .feature {
+    flex: 1 1 45%;
+  }
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .form-image,
+  .form-content {
+    flex: 1 1 100%;
+    padding: 10px;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .table td,
+  .table th {
+    padding: 0.75rem 0.5rem;
+    font-size: 14px;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background-color: #e9f7fe;
+  }
+
+  .table td {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
