@@ -71,7 +71,3 @@ Pindahkan semua file ke dalam folder
 ## Credits
 
 * Siti Aliyah Aladawiyah
-* Stevani Putri
-* Muhammad Syamil
-* Siti Sarah Aura Rozak
-* Zalfa Firial Rihdatulaisy
