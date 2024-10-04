@@ -59,9 +59,9 @@ Daftar rute penerbangan
 
 ## Installation
 
-Pindahkan semua file ke dalam folder 
+Pindahkan semua file ke dalam folder
 
-  c:\xampp\htdocs\pesawat_kelompok2
+  c:\xampp\htdocs\[nama_folder]
  
  Start Apache pada XAMPP Control Panel
  
